@@ -1,0 +1,100 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ImageLabel.BorderColor3 = Color3.fromRGB(20, 20, 20)
+ImageLabel.Position = UDim2.new(0.460999995, 0, -0.0689999983, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=8067088311"
+
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = ImageLabel
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.5, 0, 1.14999998, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 25.000
+
+local function CKEX_fake_script() 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local TextLabel = script.Parent.ImageLabel.TextLabel
+	
+	script.Parent.ImageLabel.Visible = false
+	wait(0.5)
+	script.Parent.ImageLabel.Visible = true
+	script.Parent.ImageLabel:TweenPosition(UDim2.new(0.461, 0,0.425, 0), "Out", "Bounce",1)
+	wait(2.5)
+	TextLabel.Text = "I"
+	wait(0.1)
+	TextLabel.Text = "In"
+	wait(0.1)
+	TextLabel.Text = "Inj"
+	wait(0.1)
+	TextLabel.Text = "Inje"
+	wait(0.1)
+	TextLabel.Text = "Injec"
+	wait(0.1)
+	TextLabel.Text = "Inject"
+	wait(0.1)
+	TextLabel.Text = "Injecte"
+	wait(0.1)
+	TextLabel.Text = "Injected"
+	wait(0.1)
+	TextLabel.Text = "Injected."
+	wait(0.1)
+	TextLabel.Text = "Injected. R"
+	wait(0.1)
+	TextLabel.Text = "Injected. Re"
+	wait(0.1)
+	TextLabel.Text = "Injected. Read"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready F"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready Fo"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For E"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Ex"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Exe"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Exec"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Execu"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Execut"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Executi"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Executio"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Execution"
+	wait(0.1)
+	TextLabel.Text = "Injected. Ready For Execution!"
+	wait(2.2)
+	script.Parent.ImageLabel:TweenPosition(UDim2.new(0.006, 0,0.839, 0), "Out", "Bounce",1)
+	TextLabel.Visible = false
+	wait(3)
+	for i=1,100 do
+		script.Parent.ImageLabel.Transparency = i * .1
+		script.Parent.ImageLabel.ImageTransparency = i * .1
+		wait(0.01)
+	end
+end
+coroutine.wrap(CKEX_fake_script)()
